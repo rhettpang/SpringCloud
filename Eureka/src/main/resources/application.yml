@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+
+#下边两个配置可以防止eureka启动的时候报错，但是做eureka的HA时一定不要加
+eureka:
+  client:
+    #不把自己注册到eureka服务器
+    register-with-eureka: false
+    #不到eureka服务器上获取注册信息
+    fetch-registry: false
